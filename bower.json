@@ -1,0 +1,16 @@
+{
+  "name": "sae-front-exercise",
+  "description": "Sae frontend exercise",
+  "main": "index.js",
+  "authors": [
+    "Rodrigo Fernandes da Costa"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "exercise"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

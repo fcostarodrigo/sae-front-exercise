@@ -1,0 +1,34 @@
+{
+  "name": "sae-front-exercise",
+  "version": "1.0.0",
+  "description": "Sae frontend exercise",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "author": "Rodrigo Fernandes da Costa",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html-build": "^0.7.1",
+    "grunt-ng-annotate": "^3.0.0",
+    "gruntify-eslint": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcostarodrigo/sae-front-exercise.git"
+  },
+  "keywords": [
+    "exercise"
+  ],
+  "bugs": {
+    "url": "https://github.com/fcostarodrigo/sae-front-exercise/issues"
+  },
+  "homepage": "https://github.com/fcostarodrigo/sae-front-exercise#readme"
+}
