@@ -2,6 +2,8 @@
 
 SAE frontend exercise
 
+Using: ES5, AngularJS, bootstrap, and grunt. 
+
 ## Installing development tools
 
     sudo apt-get install npm
