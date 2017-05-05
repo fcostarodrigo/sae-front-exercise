@@ -3,15 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SAE frontend exercise">
+  <meta name="author" content="Rodrigo Fernandes da Costa">
+
+  <title>SAE frontend exercício</title>
+
+  <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- build:style styles -->
   <!-- /build -->
 </head>
 
 <body ng-app="app">
 
-  {{1 + 1}}
+  <ui-view></ui-view>
 
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
   <!-- build:script scripts -->
   <!-- /build -->
 </body>

@@ -1,0 +1,10 @@
+.menu {
+  padding: 0px;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+  box-shadow: 10px -5px 6px -8px #888;
+}
+
+.menu .list-group .list-group-item {
+  border-radius: 0px;
+}
