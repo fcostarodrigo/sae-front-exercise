@@ -1,0 +1,25 @@
+<h2>Produtos</h2>
+
+<br>
+
+<button type="button" class="btn btn-primary btn-lg">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  Novo produto
+</button>
+
+<br><br><br>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="product in productsCtrl.products">
+      <td>{{product.id}}</td>
+      <td>{{product.nome}}</td>
+    </tr>
+  </tbody>
+</table>
