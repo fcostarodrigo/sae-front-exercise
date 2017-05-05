@@ -23,7 +23,9 @@
         templateUrl: '/app/products/products.modal.html',
         controller: 'ProductController',
         controllerAs: 'productCtrl'
-      }).result.then(init);
+      }).result.then(function (product) {
+        vm.products.push(product);
+      }).catch(angular.identity);
     }
   }
 
