@@ -1,0 +1,35 @@
+<form novalidate name="form" ng-submit="form.$valid && movementCtrl.make()">
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Nova Compra</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <div class="form-group">
+      <label for="amount">Quantidade</label>
+      <input ng-min="1" ng-required="true" type="number" class="form-control" id="amount" placeholder="Quantidade" ng-model="movementCtrl.movement.quantidade">
+    </div>
+    <div class="form-group">
+      <label for="price">Preço</label>
+      <input ng-required="true" type="number" ng-min="0" class="form-control" id="price" placeholder="Preço" ng-model="movementCtrl.movement.preco">
+    </div>
+    <div class="form-group">
+      <label for="date">Data</label>
+      <p class="input-group">
+        <input ng-required="true" type="text" uib-datepicker-popup datepicker-options="movementCtrl.datepickerOptions" is-open="date"
+          class="form-control" id="date" ng-model="movementCtrl.movement.data">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default" ng-click="date = !date"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="product">Produto</label>
+      <select id="product" ng-required="true" class="form-control" ng-model="movementCtrl.movement.produto" ng-options="product.id as product.nome for product in movementCtrl.products">
+
+      </select>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary">Salvar</button>
+    <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancelar</button>
+  </div>
+</form>
